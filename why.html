@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Root &amp; Rise | Offshore Talent &amp; Business Solutions</title>
+<meta name="description" content="We don't just place talent. We build teams that help businesses rise. Discover the Root, Build, Rise methodology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1B2A2A;
+  --green:#2B4A3A;
+  --leaf:#4F7A52;
+  --gold:#A97B3E;
+  --cream:#F7F1E8;
+  --line:#E2D6C2;
+  --sand:#EFE4D2;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Figtree',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.8}
+a:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+
+/* Top band */
+.top{
+  background:
+    linear-gradient(90deg, rgba(253,251,247,.92) 0%, rgba(253,251,247,.7) 50%, rgba(253,251,247,.1) 100%),
+    #F8E9D3 url("hero-bg.jpg") right bottom / cover no-repeat;
+}
+.header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding:28px 64px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-name{font-family:'Source Serif 4',serif;font-size:44px;line-height:1;letter-spacing:.01em}
+.brand-tag{font-size:12px;letter-spacing:.16em;margin-top:8px}
+.nav{display:flex;align-items:center;flex-wrap:wrap;gap:38px;font-size:16px;font-weight:500}
+.nav a{padding:8px 0;border-bottom:2px solid transparent}
+.nav a[aria-current="page"]{border-bottom-color:var(--green)}
+
+.page-title{padding:72px 76px 88px;max-width:900px}
+h1{margin:0 0 24px;font-family:'Source Serif 4',serif;font-weight:500;font-size:64px;line-height:1.12;letter-spacing:-.01em}
+.intro{margin:0;font-family:'Source Serif 4',serif;font-size:28px;line-height:1.45;max-width:700px}
+
+/* Why section */
+.why{padding:80px 24px 72px}
+.why-inner{max-width:820px;margin:0 auto}
+.why-text{display:flex;flex-direction:column;gap:24px}
+.why-text p{margin:0;font-size:18px;line-height:1.85}
+.why-text .lead{font-family:'Source Serif 4',serif;font-size:25px;line-height:1.65}
+.understand{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.understand li{position:relative;padding-left:40px;font-size:19px;font-weight:500;line-height:1.5}
+.understand li::before{content:"";position:absolute;left:0;top:2px;width:26px;height:26px;border-radius:50%;background:var(--green)}
+.understand li::after{content:"";position:absolute;left:9px;top:8px;width:8px;height:13px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg) scale(.8)}
+
+/* Pull statement */
+.pull{background:var(--sand);padding:72px 24px;text-align:center}
+.pull p{margin:0 auto;max-width:900px;font-family:'Source Serif 4',serif;font-weight:500;font-size:46px;line-height:1.25;letter-spacing:-.01em;color:var(--green)}
+.pull .accent{color:var(--gold)}
+
+/* Partner */
+.partner{padding:80px 24px 88px}
+.partner-inner{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:24px}
+.partner h2{margin:0;font-family:'Source Serif 4',serif;font-weight:500;font-size:38px;line-height:1.25}
+.partner p{margin:0;font-size:19px;line-height:1.85}
+
+.wave{display:block;width:100%;height:90px}
+.wave.flip{background:var(--green)}
+
+/* Methodology */
+.method{background:var(--green);color:#fff;padding:32px 24px 96px}
+.method-inner{max-width:1120px;margin:0 auto}
+.method-head{text-align:center;margin-bottom:56px}
+.eyebrow{margin:0 0 14px;font-size:15px;font-weight:500;letter-spacing:.24em}
+.method .eyebrow{color:#E7C98F}
+.method-head h2{margin:0;font-family:'Source Serif 4',serif;font-weight:500;font-size:44px;line-height:1.2}
+.steps{display:flex;align-items:stretch;gap:0}
+.step{flex:1 1 0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:40px 32px 36px;display:flex;flex-direction:column;gap:16px;position:relative}
+.step .no{font-size:14px;font-weight:600;letter-spacing:.2em;color:#E7C98F}
+.step .icon{width:72px;height:72px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
+.step h3{margin:6px 0 0;font-family:'Source Serif 4',serif;font-weight:500;font-size:52px;line-height:1;letter-spacing:.04em}
+.step p{margin:0;font-size:19px;line-height:1.6;color:#DCE6E2}
+.step.rise{background:#fff;color:var(--ink);border-color:#fff}
+.step.rise .no{color:var(--gold)}
+.step.rise .icon{background:var(--green)}
+.step.rise p{color:#3A4A47}
+.arrow{flex:0 0 64px;display:flex;align-items:center;justify-content:center}
+
+/* Closing */
+.closing{padding:88px 24px 96px;text-align:center}
+.closing-inner{max-width:820px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:20px}
+.closing .tri{margin:0;font-family:'Source Serif 4',serif;font-weight:500;font-size:36px;line-height:1.35}
+.closing .diff{margin:0;font-size:15px;font-weight:600;letter-spacing:.24em;color:var(--leaf)}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 34px;margin-top:12px;background:var(--green);color:#fff;border-radius:999px;font-weight:500;font-size:17px}
+
+.footer{background:var(--green);color:#C9D6D2;padding:32px 24px 40px;text-align:center;font-size:14px;letter-spacing:.14em}
+
+@media (max-width:900px){
+  .header{padding:24px}
+  .nav{gap:22px}
+  .page-title{padding:48px 24px 64px}
+  h1{font-size:44px}
+  .intro{font-size:23px}
+  .brand-name{font-size:36px}
+  .pull p{font-size:34px}
+  .steps{flex-direction:column}
+  .arrow{flex:0 0 48px;transform:rotate(90deg)}
+  .method-head h2{font-size:36px}
+}
+@media (max-width:600px){
+  h1{font-size:36px}
+  .nav{gap:16px;font-size:15px}
+  .why{padding:56px 20px 48px}
+  .why-text .lead{font-size:21px}
+  .pull{padding:56px 20px}
+  .pull p{font-size:28px}
+  .partner{padding:56px 20px 64px}
+  .partner h2{font-size:30px}
+  .step{padding:32px 24px 28px}
+  .step h3{font-size:44px}
+  .closing .tri{font-size:28px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="header">
+    <a class="brand" href="index.html" aria-label="Root &amp; Rise home">
+      <svg width="56" height="64" viewBox="0 0 56 64" fill="none" aria-hidden="true">
+        <path d="M28 4c-6 6-8 14-4 22 5-2 8-9 4-22z" fill="#3E6B4A"/>
+        <path d="M26 30c-8-6-18-4-22 2 8 4 17 3 22-2z" fill="#4F7A52"/>
+        <path d="M30 30c8-6 18-4 22 2-8 4-17 3-22-2z" fill="#4F7A52"/>
+        <path d="M28 28v14M28 42c-4 6-10 8-16 8M28 42c4 6 10 8 16 8M28 42v18M20 50l-6 10M36 50l6 10" stroke="#A97B3E" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="brand-name">ROOT &amp; RISE</div>
+        <div class="brand-tag">OFFSHORE TALENT &amp; BUSINESS SOLUTIONS</div>
+      </div>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Our Services</a>
+      <a href="why.html" aria-current="page">Why Root &amp; Rise</a>
+      <a href="index.html#careers">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <div class="page-title">
+    <h1>Why Root &amp; Rise?</h1>
+    <p class="intro">We don&rsquo;t just place talent. We build teams that help businesses rise.</p>
+  </div>
+</header>
+
+<main>
+  <section class="why" aria-label="Why choose us">
+    <div class="why-inner">
+      <div class="why-text">
+        <p class="lead">Root &amp; Rise was built by professionals who grew from the traditional BPO industry into Account Management&mdash;so we understand both sides of outsourcing.</p>
+        <ul class="understand">
+          <li>We understand what it takes to find and support great talent.</li>
+          <li>We understand what clients need from their teams.</li>
+        </ul>
+        <p>And we understand that successful outsourcing isn&rsquo;t just about filling a seat&mdash;it&rsquo;s about creating the right structure for people to deliver meaningful business results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pull" aria-label="Our promise">
+    <p>Experience is our <span class="accent">root</span>.<br>Your growth is our <span class="accent">rise</span>.</p>
+  </section>
+
+  <section class="partner" aria-label="More than a Virtual Assistant">
+    <div class="partner-inner">
+      <h2>When you partner with Root &amp; Rise, you get more than a Virtual Assistant.</h2>
+      <p>You get a partner invested in understanding your business, defining clear expectations, establishing the right processes, and measuring the outcomes that matter.</p>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1280 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 40C200 10 420 20 640 50S1080 80 1280 30V90H0z" fill="#EFE4D2"/>
+    <path d="M0 62C240 40 480 50 700 66S1080 80 1280 56V90H0z" fill="#2B4A3A"/>
+  </svg>
+
+  <section class="method" aria-label="Our methodology">
+    <div class="method-inner">
+      <div class="method-head">
+        <p class="eyebrow">OUR METHODOLOGY</p>
+        <h2>Root. Build. Rise.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="no">STEP 01</span>
+          <div class="icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2B4A3A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20V8M20 14c-5 0-8-3-8-7 5 0 8 3 8 7zM20 12c0-4 3-7 8-7 0 4-3 7-8 7zM20 20c-3 5-8 7-13 7M20 20c3 5 8 7 13 7M20 20v14"/></svg>
+          </div>
+          <h3>ROOT</h3>
+          <p>Understand your business</p>
+        </div>
+        <div class="arrow" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E7C98F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+        </div>
+        <div class="step">
+          <span class="no">STEP 02</span>
+          <div class="icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#2B4A3A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="22" width="13" height="13" rx="2"/><rect x="22" y="22" width="13" height="13" rx="2"/><rect x="13.500" y="6" width="13" height="13" rx="2"/></svg>
+          </div>
+          <h3>BUILD</h3>
+          <p>Match the right talent + establish the right structure</p>
+        </div>
+        <div class="arrow" aria-hidden="true">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#E7C98F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+        </div>
+        <div class="step rise">
+          <span class="no">STEP 03</span>
+          <div class="icon" aria-hidden="true">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 34h30M9 34V24M18 34V18M27 34V12M7 18l9-7 6 4 12-10M27 5h7v7"/></svg>
+          </div>
+          <h3>RISE</h3>
+          <p>Measure results + scale strategically</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="wave flip" viewBox="0 0 1280 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 30C240 70 480 76 700 52S1080 14 1280 40V90H0z" fill="#F7F1E8"/>
+  </svg>
+
+  <section class="closing" aria-label="The Root &amp; Rise difference">
+    <div class="closing-inner">
+      <p class="tri">Rooted in experience.<br>Built around partnership.<br>Designed to help you scale.</p>
+      <p class="diff">THAT&rsquo;S THE ROOT &amp; RISE DIFFERENCE.</p>
+      <a class="btn" href="contact.html" data-calendly>Let&rsquo;s Build Your Team
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">ROOT &amp; RISE</footer>
+
+<script src="calendly.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | Root &amp; Rise</title>
+<meta name="description" content="Get in touch with Root & Rise on WhatsApp or by email and let's build your offshore team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1B2A2A;
+  --green:#2B4A3A;
+  --leaf:#4F7A52;
+  --cream:#F7F1E8;
+  --line:#E2D6C2;
+  --sand:#EFE4D2;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Figtree',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.8}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--green);outline-offset:3px;border-radius:6px}
+
+/* Top band */
+.top{
+  background:
+    linear-gradient(90deg, rgba(253,251,247,.92) 0%, rgba(253,251,247,.7) 50%, rgba(253,251,247,.1) 100%),
+    #F8E9D3 url("hero-bg.jpg") right bottom / cover no-repeat;
+}
+.header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding:28px 64px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-name{font-family:'Source Serif 4',serif;font-size:44px;line-height:1;letter-spacing:.01em}
+.brand-tag{font-size:12px;letter-spacing:.16em;margin-top:8px}
+.nav{display:flex;align-items:center;flex-wrap:wrap;gap:38px;font-size:16px;font-weight:500}
+.nav a{padding:8px 0;border-bottom:2px solid transparent}
+.nav a[aria-current="page"]{border-bottom-color:var(--green)}
+
+.page-title{padding:72px 76px 88px;max-width:900px}
+.eyebrow{margin:0 0 20px;font-size:15px;font-weight:500;letter-spacing:.24em}
+h1{margin:0 0 24px;font-family:'Source Serif 4',serif;font-weight:500;font-size:64px;line-height:1.12;letter-spacing:-.01em}
+.intro{margin:0;font-size:19px;line-height:1.75;max-width:620px}
+
+/* Contact section */
+.contact{padding:72px 24px 80px}
+.contact-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.cards{display:flex;flex-direction:column;gap:20px}
+.method{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 30px;display:flex;align-items:center;gap:22px}
+.icon{flex:0 0 60px;width:60px;height:60px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center}
+.method-text{flex:1;min-width:0}
+.label{margin:0;font-size:13px;font-weight:600;letter-spacing:.16em;color:var(--leaf)}
+.value{margin:2px 0 0;font-family:'Source Serif 4',serif;font-size:26px;line-height:1.3;overflow-wrap:anywhere}
+.go{display:inline-flex;align-items:center;gap:8px;margin-top:10px;font-weight:600;color:var(--green);border-bottom:2px solid var(--green);padding-bottom:2px}
+.photo img{display:block;width:100%;height:auto;border-radius:16px}
+
+/* Message form */
+.form-wrap{max-width:1120px;margin:72px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.form-wrap h2{margin:0 0 12px;font-family:'Source Serif 4',serif;font-weight:500;font-size:38px;line-height:1.2}
+.form-wrap p{margin:0;font-size:18px;line-height:1.75}
+form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:18px}
+label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;letter-spacing:.04em}
+input,textarea{font:inherit;font-weight:400;letter-spacing:0;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:14px 16px;width:100%}
+textarea{min-height:140px;resize:vertical}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 34px;background:var(--green);color:#fff;border:0;border-radius:999px;font:inherit;font-weight:500;font-size:17px;cursor:pointer}
+.hint{font-size:13px;color:#5A6B66;margin:0}
+
+.wave{display:block;width:100%;height:90px}
+
+/* Closing band */
+.closing{background:var(--green);color:#fff;padding:24px 24px 88px}
+.closing-inner{max-width:1120px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:48px}
+.closing-photo{flex:0 1 460px}
+.closing-photo img{display:block;width:100%;height:auto;border-radius:16px}
+.closing-text{flex:1 1 380px;display:flex;flex-direction:column;gap:12px}
+.closing-text p{margin:0;font-family:'Source Serif 4',serif;font-weight:500;font-size:34px;line-height:1.3}
+.closing-text .sub{font-family:'Figtree',sans-serif;font-weight:400;font-size:18px;color:#C9D6D2;line-height:1.7;margin-top:8px}
+.footer{background:var(--green);color:#C9D6D2;padding:0 24px 40px;text-align:center;font-size:14px;letter-spacing:.14em}
+
+@media (max-width:900px){
+  .header{padding:24px}
+  .nav{gap:22px}
+  .page-title{padding:48px 24px 64px}
+  h1{font-size:44px}
+  .brand-name{font-size:36px}
+  .contact-inner,.form-wrap{grid-template-columns:1fr;gap:32px}
+}
+@media (max-width:600px){
+  h1{font-size:36px}
+  .nav{gap:16px;font-size:15px}
+  .intro{font-size:17px}
+  .contact{padding:48px 16px 56px}
+  .method{padding:22px 20px;gap:16px}
+  .icon{flex-basis:52px;width:52px;height:52px}
+  .value{font-size:21px}
+  form{padding:24px 20px}
+  .closing-text p{font-size:28px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="header">
+    <a class="brand" href="index.html" aria-label="Root &amp; Rise home">
+      <svg width="56" height="64" viewBox="0 0 56 64" fill="none" aria-hidden="true">
+        <path d="M28 4c-6 6-8 14-4 22 5-2 8-9 4-22z" fill="#3E6B4A"/>
+        <path d="M26 30c-8-6-18-4-22 2 8 4 17 3 22-2z" fill="#4F7A52"/>
+        <path d="M30 30c8-6 18-4 22 2-8 4-17 3-22-2z" fill="#4F7A52"/>
+        <path d="M28 28v14M28 42c-4 6-10 8-16 8M28 42c4 6 10 8 16 8M28 42v18M20 50l-6 10M36 50l6 10" stroke="#A97B3E" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <div class="brand-name">ROOT &amp; RISE</div>
+        <div class="brand-tag">OFFSHORE TALENT &amp; BUSINESS SOLUTIONS</div>
+      </div>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Our Services</a>
+      <a href="index.html#why">Why Root &amp; Rise</a>
+      <a href="index.html#careers">Careers</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+
+  <div class="page-title">
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h1>Let&rsquo;s Build Your Team</h1>
+    <p class="intro">Message us on WhatsApp or send us an email. We&rsquo;d love to hear about your business and how we can help you grow.</p>
+  </div>
+</header>
+
+<main>
+  <section class="contact" aria-label="Contact details">
+    <div class="contact-inner">
+      <div class="cards">
+        <div class="method">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.4 18.7z"/><path d="M9 9.5c.4 2.200 2.300 4.200 5 5l1.300-1.300-2-1-1 .8c-.8-.4-1.600-1.200-2-2l.8-1-1-2z"/></svg>
+          </div>
+          <div class="method-text">
+            <p class="label">WHATSAPP</p>
+            <p class="value">+63 962 140 9122</p>
+            <a class="go" href="https://wa.me/639621409122" target="_blank" rel="noopener">Chat on WhatsApp &rarr;</a>
+          </div>
+        </div>
+        <div class="method">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.500 7l8.500 6 8.500-6"/></svg>
+          </div>
+          <div class="method-text">
+            <p class="label">EMAIL</p>
+            <p class="value">rootnrise2026@gmail.com</p>
+            <a class="go" href="mailto:rootnrise2026@gmail.com">Send an email &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="images/contact.jpg" alt="Illustration of a Root &amp; Rise team member on a headset with a chat window and an email" width="960" height="600">
+      </div>
+    </div>
+
+    <div class="form-wrap" id="message">
+      <div>
+        <h2>Send us a message</h2>
+        <p>Tell us a little about your business and the kind of support you&rsquo;re looking for, and we&rsquo;ll take it from there.</p>
+      </div>
+      <form id="contact-form">
+        <label>Your name
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>Your email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>How can we help?
+          <textarea name="message" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send message
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <svg class="wave" viewBox="0 0 1280 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 40C200 10 420 20 640 50S1080 80 1280 30V90H0z" fill="#EFE4D2"/>
+    <path d="M0 62C240 40 480 50 700 66S1080 80 1280 56V90H0z" fill="#2B4A3A"/>
+  </svg>
+</main>
+
+<footer class="footer">ROOT &amp; RISE</footer>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var f = e.target;
+  var subject = 'Inquiry from ' + f.name.value;
+  var body = f.message.value + '\n\n' + f.name.value + '\n' + f.email.value;
+  window.location.href = 'mailto:rootnrise2026@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
